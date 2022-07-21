@@ -25,7 +25,7 @@ generate_hcl "_terramate_generated_providers.tf" {
           source  = "hashicorp/google"
           version = global.terraform_google_provider_version
         }
-        azurecaf = {
+        azurerm = {
           source  = "hashicorp/azurerm"
           version = global.terraform_azurerm_provider_version
         }
