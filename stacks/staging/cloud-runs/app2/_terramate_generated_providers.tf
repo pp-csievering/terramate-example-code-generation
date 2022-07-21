@@ -5,6 +5,10 @@ provider "google" {
   project = "mineiros-terramate-staging"
   region  = "europe-north1"
 }
+provider "azurerm" {
+  features {
+  }
+}
 terraform {
   required_providers {
     azurerm = {

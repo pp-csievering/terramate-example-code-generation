@@ -19,6 +19,10 @@ generate_hcl "_terramate_generated_providers.tf" {
       region  = global.terraform_google_provider_region
     }
 
+    provider "azurerm" {
+       features {}
+    }
+
     terraform {
       required_providers {
         google = {
