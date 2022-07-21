@@ -22,6 +22,8 @@ globals {
   terraform_azurerm_provider_version = "=2.46.0"
   terraform_azurerm_provider_location = "east-us"
 
+  infr_sandbox_subscription_id = "59d16696-2917-4a91-8ec5-c00eae23ee4e"
+
   # this should be adjusted when testing actual deployemnts
   terraform_google_provider_project = "mineiros-terramate-${global.environment}"
 

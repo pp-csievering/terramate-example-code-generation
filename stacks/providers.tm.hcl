@@ -21,6 +21,8 @@ generate_hcl "_terramate_generated_providers.tf" {
 
     provider "azurerm" {
        features {}
+
+       subscription_id = global.infr_sandbox_subscription_id
     }
 
     terraform {
