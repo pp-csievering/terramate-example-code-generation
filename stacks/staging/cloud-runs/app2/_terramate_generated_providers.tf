@@ -7,6 +7,10 @@ provider "google" {
 }
 terraform {
   required_providers {
+    azurecaf = {
+      source  = "hashicorp/azurerm"
+      version = "=2.46.0"
+    }
     google = {
       source  = "hashicorp/google"
       version = "~> 4.0"

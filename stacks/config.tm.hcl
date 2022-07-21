@@ -19,8 +19,13 @@ globals {
   terraform_google_provider_version = "~> 4.0"
   terraform_google_provider_region  = "europe-north1"
 
+  terraform_azurerm_provider_version = "=2.46.0"
+  terraform_azurerm_provider_location = "east-us"
+
   # this should be adjusted when testing actual deployemnts
   terraform_google_provider_project = "mineiros-terramate-${global.environment}"
+
+  
 
   ### global variables for use when generating backend
   # all variables defined here can be overwritten in any sub-directory and on the
@@ -36,6 +41,5 @@ globals {
 
   # global variables for use in terraform code within stacks
   # we use providers project and location by default
-  project  = global.terraform_google_provider_project
-  location = global.terraform_google_provider_region
+  location = global.terraform_azurerm_provider_location
 }
