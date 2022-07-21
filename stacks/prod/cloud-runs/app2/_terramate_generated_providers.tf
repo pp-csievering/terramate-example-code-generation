@@ -1,10 +1,6 @@
 // TERRAMATE: GENERATED AUTOMATICALLY DO NOT EDIT
 // TERRAMATE: originated from generate_hcl block on /stacks/providers.tm.hcl
 
-provider "google" {
-  project = "mineiros-terramate-prod"
-  region  = "europe-north1"
-}
 provider "azurerm" {
   features {
   }
@@ -14,10 +10,6 @@ terraform {
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "=2.46.0"
-    }
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 4.0"
     }
   }
 }

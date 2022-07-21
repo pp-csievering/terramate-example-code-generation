@@ -14,10 +14,10 @@ generate_hcl "_terramate_generated_providers.tf" {
 
     # the default values of globals are defined in config.tm.hcl in this directory
 
-    provider "google" {
-      project = global.terraform_google_provider_project
-      region  = global.terraform_google_provider_region
-    }
+    # provider "google" {
+    #   project = global.terraform_google_provider_project
+    #   region  = global.terraform_google_provider_region
+    # }
 
     provider "azurerm" {
        features {}
@@ -25,10 +25,10 @@ generate_hcl "_terramate_generated_providers.tf" {
 
     terraform {
       required_providers {
-        google = {
-          source  = "hashicorp/google"
-          version = global.terraform_google_provider_version
-        }
+        # google = {
+        #   source  = "hashicorp/google"
+        #   version = global.terraform_google_provider_version
+        # }
         azurerm = {
           source  = "hashicorp/azurerm"
           version = global.terraform_azurerm_provider_version
