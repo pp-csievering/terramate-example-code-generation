@@ -2,6 +2,7 @@
 // TERRAMATE: originated from generate_hcl block on /stacks/providers.tm.hcl
 
 provider "azurerm" {
+  subscription_id = "59d16696-2917-4a91-8ec5-c00eae23ee4e"
   features {
   }
 }
