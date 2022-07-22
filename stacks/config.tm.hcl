@@ -19,8 +19,8 @@ globals {
   terraform_google_provider_version = "~> 4.0"
   terraform_google_provider_region  = "europe-north1"
 
-  terraform_azurerm_provider_version = "=2.46.0"
-  terraform_azurerm_provider_location = "east-us"
+  terraform_azurerm_provider_version = "3.11"
+  terraform_azurerm_provider_location = "eastus"
 
   infr_sandbox_subscription_id = "59d16696-2917-4a91-8ec5-c00eae23ee4e"
 
