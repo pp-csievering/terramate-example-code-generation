@@ -5,8 +5,8 @@ generate_hcl "_terramate_generated_storage_account.tf" {
         location = global.location
     }
 
-    resource "azurerm_storage_account" "example" {
-        name                     = "storageaccountname"
+    resource "azurerm_storage_account" "storage_account" {
+        name                     = "${global.project}-${global.environment}-sa"
         resource_group_name      = global.resource_group
         location                 = global.location
         account_tier             = "Standard"
