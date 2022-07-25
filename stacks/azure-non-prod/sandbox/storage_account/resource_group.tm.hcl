@@ -1,4 +1,4 @@
-generate_hcl "_terramate_generated_resource_group.tf" {
+generate_hcl "_terramate_generated_sa_resource_group.tf" {
   content {
     resource "azurerm_resource_group" "example" {
         name     = global.resource_group
