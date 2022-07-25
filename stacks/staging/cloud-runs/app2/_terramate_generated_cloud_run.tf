@@ -11,7 +11,7 @@ module "cloud_run_app" {
     },
   ]
   image                = "gcr.io/kubernetes-e2e-test-images/echoserver:2.2"
-  location             = "east-us"
+  location             = "eastus"
   name                 = "terramate-app2-staging"
   project              = "terramate"
   service_account_name = "cloud-run@terramate.iam.gserviceaccount.com"

@@ -11,7 +11,7 @@ module "cloud_run_app" {
     },
   ]
   image                = "gcr.io/cloudrun/hello:latest"
-  location             = "east-us"
+  location             = "eastus"
   name                 = "terramate-app1-prod"
   project              = "terramate"
   service_account_name = "cloud-run@terramate.iam.gserviceaccount.com"

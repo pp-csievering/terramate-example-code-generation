@@ -12,9 +12,7 @@ generate_hcl "_terramate_generated_storage_account.tf" {
         account_tier             = "Standard"
         account_replication_type = "GRS"
 
-        tags = {
-            environment = "sandbox"
-        }
+        tags = global.tagblock
     }
   }
 }
