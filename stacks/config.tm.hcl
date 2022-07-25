@@ -44,4 +44,8 @@ globals {
   # global variables for use in terraform code within stacks
   # we use providers project and location by default
   location = global.terraform_azurerm_provider_location
+  tagblock = {
+    project = global.project
+    environment = global.environment
+  }
 }
