@@ -45,7 +45,9 @@ globals {
   # we use providers project and location by default
   location = global.terraform_azurerm_provider_location
   tagblock = {
-    project = global.project
-    environment = global.environment
+    project     = global.tenant
+    environment = global.tenant_env
+    owner       = "Planet Platform Delivery"
+    module      = terramate.stack.path.basename 
   }
 }
