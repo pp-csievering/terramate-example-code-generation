@@ -6,6 +6,7 @@ generate_hcl "_terramate_generated_sa_outputs.tf" {
     
     output "account_connection_string" {
       value = azurerm_storage_account.this.primary_connection_string
+      sensitive = true
     }
     
     output "account_name" {
