@@ -5,13 +5,17 @@ generate_hcl "_terramate_generated_hub.tf" {
       location            = global.location
       resource_group_name = global.resource_group
       address_space       = global.hub_network.vnet_cidr
-      
-      subnet {
-            name           = "private_endpoints"
-            address_prefix = global.hub_network.private_endpoints_cidr
-            enforce_private_link_endpoint_network_policies = true
-      }
+
       tags= global.tagblock
+    }
+    resource "azurerm_subnet" "this" {
+      name                 = "private_endpoints"
+      resource_group_name  = global.resource_group
+      virtual_network_name = azurerm_virtual_network.hub.name
+      address_prefixes     = global.hub_network.private_endpoints_cidr
+      enforce_private_link_endpoint_network_policies = true
+    
+
     }
   }
 }
