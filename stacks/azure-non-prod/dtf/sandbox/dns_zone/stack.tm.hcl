@@ -5,4 +5,8 @@ stack {
   after = [
     "../networking"
   ]
+  before = [
+    "../storage_account",
+    "../container_registry"
+  ]
 }
