@@ -11,5 +11,8 @@ generate_hcl "_terramate_generated_sa_outputs.tf" {
     output "account_name" {
       value = azurerm_storage_account.this.name
     }
+    output "private_ip" {
+      value = azurerm_private_endpoint.endpoint.private_service_connection[0].private_ip_address
+}
   }
 }
