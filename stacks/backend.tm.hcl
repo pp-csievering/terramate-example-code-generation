@@ -12,7 +12,7 @@
 
 
  generate_hcl "_terramate_generated_backend.tf" {
-   condition = global.environment != "dev"
+   condition = global.tenant_env != "dev"
    content {
      terraform {
  
@@ -30,7 +30,7 @@
    }
  }
  generate_hcl "_terramate_generated_backend.tf" {
-   condition = global.environment == "dev"
+   condition = global.tenant_env == "dev"
    content {
      terraform {
  
