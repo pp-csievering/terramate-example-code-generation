@@ -7,6 +7,7 @@ generate_hcl "_terramate_generated_storage_account.tf" {
         location                 = global.location
         account_tier             = "Standard"
         account_replication_type = "GRS"
+        access_tier              = "hot"
 
         tags = global.tagblock
     }
