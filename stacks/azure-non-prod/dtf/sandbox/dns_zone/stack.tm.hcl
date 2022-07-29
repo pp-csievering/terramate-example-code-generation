@@ -9,4 +9,7 @@ stack {
     "../storage_account",
     "../container_registry"
   ]
+  wants = [
+    "../networking"
+  ]
 }

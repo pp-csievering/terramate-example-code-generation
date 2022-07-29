@@ -3,7 +3,11 @@ stack {
   description = "private_endpoints"
   id          = "61f8e19c-a521-4ca9-8139-948fa4a79554"
   after = [
+    "../networking",
     "../container_registry",
     "../storage_account"
+  ]
+  wants = [
+    "../networking"
   ]
 }
