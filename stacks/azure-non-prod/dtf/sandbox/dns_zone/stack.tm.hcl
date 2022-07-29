@@ -6,6 +6,7 @@ stack {
     "../networking"
   ]
   before = [
+    "../private_endpoints",
     "../storage_account",
     "../container_registry"
   ]

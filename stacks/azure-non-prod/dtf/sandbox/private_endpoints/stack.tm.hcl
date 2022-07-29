@@ -8,6 +8,7 @@ stack {
     "../storage_account"
   ]
   wants = [
-    "../networking"
+    "../networking",
+    "../dns_zone"
   ]
 }
