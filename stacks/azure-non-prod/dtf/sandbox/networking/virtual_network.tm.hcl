@@ -6,10 +6,10 @@ generate_hcl "_terramate_generated_hub.tf" {
       resource_group_name = global.resource_group
       address_space       = global.hub_network.vnet_cidr
 
-    subnet {
-    name           = "subnet1"
-    address_prefix = global.hub_network.shared_dns_cidr
-    } 
+    # subnet {
+    # name           = "subnet1"
+    # address_prefix = global.hub_network.shared_dns_cidr
+    # } 
 
       tags= global.tagblock
     }
