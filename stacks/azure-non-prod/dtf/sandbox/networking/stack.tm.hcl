@@ -6,6 +6,6 @@ stack {
     "../storage_account",
     "../container_registry",
     "../dns_zone",
-    "../private_endpoint"
+    "../private_endpoints"
   ]
 }
