@@ -5,7 +5,7 @@ generate_hcl "_terramate_generated_private_dns.tf" {
      resource_group_name = global.resource_group
     }
 
-# create link to vnet
+    # create link to vnet
     resource "azurerm_private_dns_zone_virtual_network_link" "this" {
       name                  = "vnet-link"
       resource_group_name   = global.resource_group
