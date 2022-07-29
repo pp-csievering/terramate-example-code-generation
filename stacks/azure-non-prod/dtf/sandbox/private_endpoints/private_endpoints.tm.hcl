@@ -18,7 +18,7 @@ generate_hcl "_terramate_generated_private_endpoints.tf" {
     
       private_service_connection {
         name                           = "psc-${global.tenant}-${global.tenant_env}-sa"
-        private_connection_resource_id = "${data.azure_storage_account.sa.id}"
+        private_connection_resource_id = "${data.azurerm_storage_account.sa.id}"
         is_manual_connection           = false
         subresource_names              = [ "blob" ]
       }
